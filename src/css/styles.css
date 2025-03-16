@@ -6,13 +6,95 @@
 */
 /* Common styles */
 @import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+button {
+  width: 75px;
+  height: 40px;
+  padding: 8px 16px;
+  gap: 10px;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  border: none;
+  letter-spacing: 0.04em;
+  margin: 0;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+button[data-start]:hover {
+  background-color: #6c8cff;
+}
+
+button[data-start]:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+}
+
+#datetime-picker {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 272px;
+  height: 40px;
+  margin-right: 8px;
+  padding: 0px 16px;
+  background: transparent;
+  outline: none;
+  transition: border-color 250ms ease-in-out, background-color 250ms ease-in-out,
+    color 250ms ease-in-out;
+}
+
+#datetime-picker:hover {
+  border-color: #000;
+}
+
+#datetime-picker:focus {
+  border-color: #4e75ff;
+}
+
+#datetime-picker:disabled {
+  background-color: #fafafa;
+  color: #808080;
+}
+
+.wrapper {
+  background-color: #fff;
+  max-width: 400px;
+  border-radius: 15px;
+  padding: 16px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  column-gap: 24px;
+  margin-top: 24px;
+}
+.field {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  text-align: center;
+}
+
+.span {
+  display: block;
+}
+
+.label {
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
